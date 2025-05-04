@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roselyne Pipernos - Une Histoire de Résilience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .page-section {
+            display: none;
+        }
+        .page-section.active {
+            display: block;
+        }
+        header {
+            background: linear-gradient(to right, #1e3a8a, #3b82f6);
+        }
+        nav a {
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #dbeafe;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="text-white py-4 sticky top-0 z-10 shadow-md">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Roselyne Pipernos</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#" onclick="showPage('presentation')" class="text-lg">Présentation</a></li>
+                    <li><a href="#" onclick="showPage('temoignage')" class="text-lg">Témoignage</a></li>
+                    <li><a href="#" onclick="showPage('remerciements')" class="text-lg">Remerciements</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- Présentation Page -->
+        <section id="presentation" class="page-section active">
+            <h2 class="text-3xl font-semibold text-blue-900 mb-6">Présentation</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-2xl font-medium mb-4">Préface</h3>
+                <p class="mb-4">
+                    Dans l'automne d'une vie, lorsque les années se tissent en une tapisserie d'expériences où chaque fil narre une lutte, une victoire ou une perte, une personne de plus de soixante-dix ans se tient à l'orée d'un monde en pleine métamorphose. Elle contemple une ère où l'intelligence artificielle (IA), telle une divinité contemporaine, façonne des horizons jadis inconcevables. Vivre avec son temps, pour ces âmes riches d'histoire, n'est pas une simple nécessité, mais une exhortation à danser avec l'inconnu, à embrasser les prodiges d'une époque où la science redéfinit les contours de l'humain.
+                </p>
+                <p class="mb-4">
+                    Le domaine médical, porté par les ailes de l'IA, s'est mué en un sanctuaire d'espoir où les frontières du possible s'élargissent sans cesse. Les algorithmes, tels des oracles modernes, scrutent des constellations de données cliniques, prédisant l'évolution des pathologies avec une précision qui confine à la prescience. Dans le champ de la neurologie, et particulièrement dans la lutte contre la maladie de Parkinson, les avancées techniques s'apparentent à des miracles forgés par la raison.
+                </p>
+                <p class="mb-4">
+                    Les implants cérébraux, ces dispositifs d'une sophistication extrême, incarnent une révolution silencieuse. La stimulation cérébrale profonde (DBS), pilier de la prise en charge du Parkinson, a atteint des sommets d'élégance technologique. Les électrodes, d'une finesse presque poétique, sont désormais implantées avec une précision guidée par des modèles d'IA qui cartographient les réseaux neuronaux en trois dimensions. Ces systèmes, ajustés en temps réel par des algorithmes adaptatifs, dialoguent avec les neurones, apaisant les tremblements, restaurant l'équilibre, et rendant à l'âme sa maîtrise sur le corps.
+                </p>
+                <p>
+                    Au-delà de la prouesse technique, ces avancées incarnent l'esprit d'une époque : une époque où l'âge n'est plus un refuge dans le passé, mais un tremplin vers l'avenir. C'est dans cet esprit que s'ouvre l'histoire de Roselyne Pipernos, une femme dont le courage et la ténacité illuminent les pages qui suivent.
+                </p>
+            </div>
+        </section>
+
+        <!-- Témoignage Page -->
+        <section id="temoignage" class="page-section">
+            <h2 class="text-3xl font-semibold text-blue-900 mb-6">Témoignage</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-2xl font-medium mb-4">L'Histoire de Roselyne</h3>
+                <p class="mb-4">
+                    Je m'appelle Roselyne Pipernos, et à 73 ans, j'ai traversé des vallées obscures où le corps trahit l'âme, où la volonté chancelle face à une maladie implacable. En 2019, dans une salle austère d'un hôpital parisien, le diagnostic est tombé : Parkinson. Ce mot, lourd comme une sentence, planait déjà dans mon esprit. Depuis vingt ans, un neurologue attentif m'accompagnait, scrutant les prémices de la maladie dans le frémissement discret de mes mains ou la raideur insidieuse de mes pas.
+                </p>
+                <p class="mb-4">
+                    Pendant cinq ans, j'ai cherché un espoir dans ce brouillard. Puis, j'ai rencontré un neurochirurgien d'exception. Sa présence allait au-delà d'un simple échange médical : il semblait sonder mon âme pour y déceler une étincelle de courage. Après des mois de réflexion, j'ai pris une décision audacieuse : le 13 février 2024, je subirais une opération pour poser un stimulateur cérébral.
+                </p>
+                <p class="mb-4">
+                    L'intervention fut un succès, mais la victoire fut de courte durée. Peu après, mes jambes se mirent à trembler avec une intensité nouvelle. Une chute brutale me précipita à l'hôpital : le stimulateur, délogé, menaçait ma santé. Le 21 mars 2024, une opération d'urgence fut nécessaire pour le retirer. Le 7 mai 2024, une troisième opération marqua un tournant décisif. À mon réveil, un silence étrange m'enveloppa : mes jambes ne tremblaient plus. Ce n'était pas seulement l'absence de symptômes, c'était une renaissance.
+                </p>
+                <p class="mb-4">
+                    Encouragée, j'ai désactivé le stimulateur pendant dix jours, puis 35 jours. Aucun tremblement, aucune rechute. Mon neurochirurgien expliqua une hypothèse fascinante : ce nouveau placement des électrodes semblait avoir réécrit les règles du jeu. Aujourd'hui, je marche, je vis, je respire. Le Parkinson, tapi dans l'ombre, n'a pas disparu, mais il ne régit plus mes jours.
+                </p>
+            </div>
+        </section>
+
+        <!-- Remerciements Page -->
+        <section id="remerciements" class="page-section">
+            <h2 class="text-3xl font-semibold text-blue-900 mb-6">Remerciements</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <p class="mb-4">
+                    Ce chemin, je ne l'ai pas parcouru seule. Une troupe précieuse m'a accompagnée : des kinésithérapeutes qui ont réappris à mes muscles la fluidité du mouvement, des professeurs de danse qui ont insufflé du rythme à mes pas, des entraîneurs de boxe qui m'ont enseigné à défier l'adversité. Ensemble, nous avons documenté cette aventure, à la fois scientifique et rebelle.
+                </p>
+                <p>
+                    Ma gratitude va également à l'équipe médicale, dont le professionnalisme et la rigueur ont été salvateurs, et à mon neurochirurgien, dont l'écoute et la vision audacieuse ont changé le cours de ma vie. Mon histoire est un hymne à la ténacité, à l'écoute de soi, et à ces moments où l'humain, fragile et obstiné, défie l'inéluctable.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-900 text-white py-4 mt-8">
+        <div class="container mx-auto px-4 text-center">
+	    <p> Site conçu par Jean Philippe ZANGA</p>
+            <p>&copy; 2025 Jean Philippe ZANGA. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.page-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
