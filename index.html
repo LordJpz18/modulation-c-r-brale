@@ -7,9 +7,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Dancing Script', cursive;
             line-height: 1.6;
             color: #333;
+	    font-size: 27px;
+	    color: #000000;
+	    font-weight: bold;
         }
         html {
             scroll-behavior: smooth;
@@ -26,6 +29,14 @@
         img, video {
             max-width: 100%;
             height: auto;
+        }
+	footer {
+            font-family: Arial, Helvetica, sans-serif; /* Arial avec polices de secours */
+            font-size: 16px; /* Taille ajustée pour le footer */
+            color: #333333; /* Couleur cohérente */
+            text-align: center;
+            padding: 10px;
+            background-color: linear-gradient(to right, #1e3a8a, #3b82f6);
         }
     </style>
 </head>
@@ -58,11 +69,14 @@
                 </p>
                 <p class="mb-4">
                     Les implants cérébraux, ces dispositifs d'une sophistication extrême, incarnent une révolution silencieuse. La stimulation cérébrale profonde (DBS), pilier de la prise en charge du Parkinson, a atteint des sommets d'élégance technologique. Les électrodes, d'une finesse presque poétique, sont désormais implantées avec une précision guidée par des modèles d'IA qui cartographient les réseaux neuronaux en trois dimensions. Ces systèmes, ajustés en temps réel par des algorithmes adaptatifs, dialoguent avec les neurones, apaisant les tremblements, restaurant l'équilibre, et rendant à l'âme sa maîtrise sur le corps.
-                </p>
-                <p class="mb-6">
+		</p>
+		<p class="mb-4">
+			<iframe src="https://www.youtube.com/embed/zQmisQPoR3A?si=PHeXs-c_pRHqgaAR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"class="rouded-lg shadow-md w-[560px] h-[315px] object-cover mx-auto mt-6" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</p>
+		<p class="mb-6">
                     Au-delà de la prouesse technique, ces avancées incarnent l'esprit d'une époque : une époque où l'âge n'est plus un refuge dans le passé, mais un tremplin vers l'avenir. C'est dans cet esprit que s'ouvre l'histoire de Roselyne Pipernos, une femme dont le courage et la ténacité illuminent les pages qui suivent.
                 </p>
-                <img src="rosy.jpg" alt="Portrait de Roselyne Pipernos" class="rounded-lg shadow-md w-[400px] h-[350px] object-cover mx-auto mt-6">
+                <img src="rosy.jpg" alt="Portrait de Roselyne Pipernos" class="rounded-lg shadow-md w-[720px] h-[1000px] object-cover mx-auto mt-6">
             </div>
         </section>
 
@@ -117,18 +131,19 @@
                 <div class="mb-8">
                     <h4 class="text-lg sm:text-xl font-semibold text-blue-800 mb-4">2. Les Opérations</h4>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        
                         <div>
-                            <h5 class="text-base sm:text-lg font-medium mb-2">Vidéo 3: Première Intervention (Février 2024)</h5>
-                            <img src="op1.jpg" alt="Pose du stimulateur cérébral en février 2024" class="rounded-lg shadow-md w-[400px] h-[225px] object-cover mx-auto">
-                            <p class="mt-2 text-sm text-gray-600 text-center">Pose du stimulateur cérébral et espoirs initiaux.</p>
-                        </div>
-                        <div>
-                            <h5 class="text-base sm:text-lg font-medium mb-2">Vidéo 4: Opérations d'Urgence et Finale (Mars et Mai 2024)</h5>
+                            <h5 class="text-base sm:text-lg font-medium mb-2"> Première intervention février 2024</h5>
                             <video controls class="rounded-lg shadow-md w-[400px] h-[225px] object-cover mx-auto">
                                 <source src="op.mp4" type="video/mp4">
                                 Votre navigateur ne supporte pas la balise vidéo.
                             </video>
-                            <p class="mt-2 text-sm text-gray-600 text-center">Retrait d'urgence et nouvelle pose avec techniques innovantes.</p>
+                            <p class="mt-2 text-sm text-gray-600 text-center">Après l'opération</p>
+                        </div>
+			<div>
+                            <h5 class="text-base sm:text-lg font-medium mb-2">Première opération</h5>
+                            <img src="op1.jpg" alt="Pose du stimulateur cérébral en février 2024" class="rounded-lg shadow-md w-[400px] h-[225px] object-cover mx-auto">
+			    <p class="mt-2 text-sm text-gray-600 text-center">Pose du stimulateur cérébral.</p>
                         </div>
                     </div>
                 </div>
@@ -138,17 +153,53 @@
                     <h4 class="text-lg sm:text-xl font-semibold text-blue-800 mb-4">3. La Rééducation</h4>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                            <h5 class="text-base sm:text-lg font-medium mb-2">Vidéo 5: Aquagym</h5>
+                            <h5 class="text-base sm:text-lg font-medium mb-2">Vidéo 5: Balnéothérapie partie 1</h5>
                             <video controls class="rounded-lg shadow-md w-[400px] h-[225px] object-cover mx-auto">
-                                <source src="aquagym.mp4" type="video/mp4">
+                                <source src="balneo.mp4" type="video/mp4">
                                 Votre navigateur ne supporte pas la balise vidéo.
                             </video>
                             <p class="mt-2 text-sm text-gray-600 text-center">Séances pour retrouver la fluidité des mouvements.</p>
                         </div>
                         <div>
-                            <h5 class="text-base sm:text-lg font-medium mb-2">Vidéo 6: Boxe</h5>
+                            <h5 class="text-base sm:text-lg font-medium mb-2">Vidéo 6: Balnéothérapie partie 2</h5>
+                            <video controls class="rounded-lg shadow-md w-[400px] h-[225px] object-cover mx-auto">
+                                <source src="aquagym.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la balise vidéo.
+                            </video>
+                            <p class="mt-2 text-sm text-gray-600 text-center">Activités de danse et boxe pour renforcer le corps et l'esprit.</p>
+                        </div>
+                    </div>
+		   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h5 class="text-base sm:text-lg font-medium mb-2">Vidéo 7: Balnéothérapie partie 3</h5>
+                            <video controls class="rounded-lg shadow-md w-[400px] h-[225px] object-cover mx-auto">
+                                <source src="elastic.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la balise vidéo.
+                            </video>
+                            <p class="mt-2 text-sm text-gray-600 text-center">Séances pour retrouver la fluidité des mouvements.</p>
+                        </div>
+                        <div>
+                            <h5 class="text-base sm:text-lg font-medium mb-2">Vidéo 8: Boxe partie 1</h5>
                             <video controls class="rounded-lg shadow-md w-[400px] h-[225px] object-cover mx-auto">
                                 <source src="boxe.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la balise vidéo.
+                            </video>
+                            <p class="mt-2 text-sm text-gray-600 text-center">Activités de boxe pour renforcer le corps et l'esprit.</p>
+                        </div>
+                    </div>
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h5 class="text-base sm:text-lg font-medium mb-2">Vidéo 9: Boxe partie 2</h5>
+                            <video controls class="rounded-lg shadow-md w-[400px] h-[225px] object-cover mx-auto">
+                                <source src="boxe2.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la balise vidéo.
+                            </video>
+                            <p class="mt-2 text-sm text-gray-600 text-center">Séances pour retrouver la fluidité des mouvements.</p>
+                        </div>
+                        <div>
+                            <h5 class="text-base sm:text-lg font-medium mb-2">Vidéo 10: Boxe partie 3</h5>
+                            <video controls class="rounded-lg shadow-md w-[400px] h-[225px] object-cover mx-auto">
+                                <source src="boxe3.mp4" type="video/mp4">
                                 Votre navigateur ne supporte pas la balise vidéo.
                             </video>
                             <p class="mt-2 text-sm text-gray-600 text-center">Activités de danse et boxe pour renforcer le corps et l'esprit.</p>
@@ -158,27 +209,83 @@
 
                 <!-- Étape 4: La Renaissance -->
                 <div class="mb-8">
-                    <h4 class="text-lg sm:text-xl font-semibold text-blue-800 mb-4">4. La Renaissance</h4>
+                    <h4 class="text-lg sm:text-xl font-semibold text-blue-800 mb-4">4. Expérimentations sans stimulation cérébrale</h4>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                            <h5 class="text-base sm:text-lg font-medium mb-2">Vidéo 7: Expérimentation sans Stimulateur</h5>
+                            <h5 class="text-base sm:text-lg font-medium mb-2">Vidéo 7: Partie 1</h5>
                             <video controls class="rounded-lg shadow-md w-[400px] h-[225px] object-cover mx-auto">
-                                <source src="train1.mp4" type="video/mp4">
+                                <source src="t1.mp4" type="video/mp4">
                                 Votre navigateur ne supporte pas la balise vidéo.
                             </video>
                             <p class="mt-2 text-sm text-gray-600 text-center">Périodes sans activation et découverte d'une nouvelle liberté.</p>
                         </div>
                         <div>
-                            <h5 class="text-base sm:text-lg font-medium mb-2">Vidéo 8: Une Nouvelle Vie</h5>
+                            <h5 class="text-base sm:text-lg font-medium mb-2">Vidéo : Partie 2</h5>
                             <video controls class="rounded-lg shadow-md w-[400px] h-[225px] object-cover mx-auto">
-                                <source src="train2.mp4" type="video/mp4">
+                                <source src="t2.mp4" type="video/mp4">
                                 Votre navigateur ne supporte pas la balise vidéo.
                             </video>
                             <p class="mt-2 text-sm text-gray-600 text-center">Roselyne célèbre sa résilience et sa maîtrise retrouvée.</p>
                         </div>
                     </div>
                 </div>
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h5 class="text-base sm:text-lg font-medium mb-2">Vidéo : Exercices</h5>
+                            <video controls class="rounded-lg shadow-md w-[400px] h-[225px] object-cover mx-auto">
+                                <source src="s1.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la balise vidéo.
+                            </video>
+                            <p class="mt-2 text-sm text-gray-600 text-center">Séances pour retrouver la fluidité des mouvements.</p>
+                        </div>
+                        <div>
+                            <h5 class="text-base sm:text-lg font-medium mb-2">Vidéo : Exercices</h5>
+                            <video controls class="rounded-lg shadow-md w-[400px] h-[225px] object-cover mx-auto">
+                                <source src="s2.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la balise vidéo.
+                            </video>
+                            <p class="mt-2 text-sm text-gray-600 text-center">Activités de danse et boxe pour renforcer le corps et l'esprit.</p>
+                        </div>
+                    </div>
+		   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h5 class="text-base sm:text-lg font-medium mb-2">Vidéo : Exercices</h5>
+                            <video controls class="rounded-lg shadow-md w-[400px] h-[225px] object-cover mx-auto">
+                                <source src="s5.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la balise vidéo.
+                            </video>
+                            <p class="mt-2 text-sm text-gray-600 text-center">Séances pour retrouver la fluidité des mouvements.</p>
+                        </div>
+                        <div>
+                            <h5 class="text-base sm:text-lg font-medium mb-2">Vidéo : Exercices</h5>
+                            <video controls class="rounded-lg shadow-md w-[400px] h-[225px] object-cover mx-auto">
+                                <source src="p1.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la balise vidéo.
+                            </video>
+                            <p class="mt-2 text-sm text-gray-600 text-center">Activités de danse et boxe pour renforcer le corps et l'esprit.</p>
+                        </div>
+                    </div>
+		   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h5 class="text-base sm:text-lg font-medium mb-2">Vidéo 5: Balnéothérapie</h5>
+                            <video controls class="rounded-lg shadow-md w-[400px] h-[225px] object-cover mx-auto">
+                                <source src="p2.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la balise vidéo.
+                            </video>
+                            <p class="mt-2 text-sm text-gray-600 text-center">Séances pour retrouver la fluidité des mouvements.</p>
+                        </div>
+                        <div>
+                            <h5 class="text-base sm:text-lg font-medium mb-2">Vidéo 6: Balnéothérapie</h5>
+                            <video controls class="rounded-lg shadow-md w-[400px] h-[225px] object-cover mx-auto">
+                                <source src="p3.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la balise vidéo.
+                            </video>
+                            <p class="mt-2 text-sm text-gray-600 text-center">Activités de danse et boxe pour renforcer le corps et l'esprit.</p>
+                        </div>
+                    </div>
+
             </div>
+	    
         </section>
 
         <!-- Remerciements Section -->
@@ -192,8 +299,8 @@
                     Ma gratitude va également à l'équipe médicale, dont le professionnalisme et la rigueur ont été salvateurs, et à mon neurochirurgien, dont l'écoute et la vision audacieuse ont changé le cours de ma vie. Mon histoire est un hymne à la ténacité, à l'écoute de soi, et à ces moments où l'humain, fragile et obstiné, défie l'inéluctable.
                 </p>
                 <div class="text-center">
-                    <img src="palfy.jpg" alt="Pr. Stéphane Palfy neurochirurgien" class="rounded-lg shadow-md w-[150px] h-[150px] object-cover mx-auto">
-                    <p class="mt-2 text-sm text-gray-600">Pr. Stéphane Palfy neurochirurgien</p>
+                    <img src="paf.jpg" alt="Pr. Stéphane Palfy neurochirurgien" class="rounded-lg shadow-md w-[450px] h-[450px] object-cover mx-auto">
+                    <p class="mt-2 text-sm text-gray-600">Pr. Stéphane Palfi neurochirurgien avec l'étui du stimulateur.</p>
                 </div>
             </div>
         </section>
