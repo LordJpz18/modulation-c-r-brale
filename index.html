@@ -183,6 +183,40 @@
             font-size: 2rem;
         }
 
+        /* Style pour les vidéos YouTube responsives */
+        .youtube-container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .youtube-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+
+        .youtube-container::before {
+            content: "";
+            display: block;
+            padding-top: 100%; /* Ratio 1:1 pour correspondre aux images */
+        }
+
+        /* Style spécifique pour la vidéo YouTube dans la section remerciements */
+        .youtube-container.remerciements {
+            width: 400px;
+            height: 400px;
+        }
+
+        .youtube-container.remerciements iframe {
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
         /* Modal styles */
         .modal {
             display: none;
@@ -315,7 +349,7 @@
                     Les implants cérébraux, ces dispositifs d'une sophistication extrême, incarnent une révolution silencieuse. La stimulation cérébrale profonde (SCP), pilier de la prise en charge du Parkinson, a atteint des sommets d'élégance technologique. Les électrodes, d'une finesse presque poétique, sont désormais implantées avec une précision guidée par des modèles d'IA qui cartographient les réseaux neuronaux en trois dimensions. Ces systèmes, ajustés en temps réel par des algorithmes adaptatifs, dialoguent avec les neurones, apaisant les tremblements, restaurant l'équilibre, et rendant à l'âme sa maîtrise sur le corps.
                 </p>
                 <p class="mb-4">
-                    <iframe src="https://www.youtube.com/embed/zQmisQPoR3A?si=PHeXs-c_pRHqgaAR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"class="rouded-lg shadow-md w-[560px] h-[315px] object-cover mx-auto mt-6" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/zQmisQPoR3A?si=PHeXs-c_pRHqgaAR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="rounded-lg shadow-md w-full max-w-[560px] h-[315px] object-cover mx-auto mt-6" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </p>
                 <p class="mb-6">
                     Au-delà de la prouesse technique, ces avancées incarnent l'esprit d'une époque : une époque où l'âge n'est plus un refuge dans le passé, mais un tremplin vers l'avenir. C'est dans cet esprit que s'ouvre l'histoire de Roselyne Pipernos, une femme dont le courage et la ténacité illuminent les pages qui suivent.
@@ -356,7 +390,7 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div>
                             <video controls class="rounded-lg shadow-md w-[400px] h-[225px] object-cover mx-auto">
-                                <source src="aux/danse.mp4" type="video/mp4">
+                                <source src="aux/dance.mp4" type="video/mp4">
                                 Votre navigateur ne supporte pas la balise vidéo.
                             </video>
                             <p class="mt-2 text-sm text-gray-600 text-center">Tremblements visibles.</p>
@@ -595,25 +629,37 @@
                     Merci à ma famille, à tous mes amis de longue date et à mes collègues.
                 </p>
                 <div class="grid grid-cols-1 gap-8 mt-8">
+                    <h4 class="text-lg sm:text-xl font-semibold text-blue-800 mb-6">L'équipe médicale de l'hopital Henri Mondor :</h4>
                     <div class="text-center">
                         <img src="aux/paf.jpg" alt="Pr. Stéphane Palfy neurochirurgien" class="rounded-lg shadow-md w-[400px] h-[400px] object-cover mx-auto">
-                        <p class="mt-2 text-sm text-gray-600"><a href="https://www.echosciences-grenoble.fr/evenements/therapie-genique-dans-la-maladie-de-parkinson-etats-de-l-art-et-prospectives-par-le-professeur-stephane-palfi" class="hover:text-blue-600">Pr. Stéphane Palfi neurochirurgien. Je le remercie de m'avoir redonné une forme humaine (cliquez).</a></p>
+                        <p class="mt-2 text-sm text-gray-600"><a href="https://www.echosciences-grenoble.fr/evenements/therapie-genique-dans-la-maladie-de-parkinson-etats-de-l-art-et-prospectives-par-le-professeur-stephane-palfi" class="hover:text-blue-600"><b>Pr. Stéphane PALFI Neurochirurgien</b> (cliquez).</a></p>
                         <p class="mt-1 text-sm text-gray-600"><a href="https://www.ijclab.in2p3.fr/actualite/beams-la-start-up-ijclaboise-laureate-du-concours-i-lab-2023/" class="hover:text-blue-600">Lien de sa start-up de recherche.</a></p>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div class="text-center">
                             <img src="aux/doc.jpg" alt="Docteur" class="rounded-lg shadow-md w-[400px] h-[400px] object-cover mx-auto">
-                            <p class="mt-2 text-sm text-gray-600">Dr. Beaugendre - Neurophysicienne.</p>
+                            <p class="mt-2 text-sm text-gray-600"><b>Dr. BEAUGENDRE  Neurophysicienne</b>.</p>
                         </div>
                         <div class="text-center">
                             <p class="mb-4">
-                                <iframe width="400" height="400" src="https://www.youtube.com/embed/rhhxQi9Ynpg?si=RoGtHiaNDICObm01" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded-lg shadow-md mx-auto"></iframe>
-                                <p class="mt-2 text-sm text-gray-600">Dr. Yann-Suhan SÉNOVA - Neurochirurgien</p>
+                                <div class="youtube-container remerciements">
+                                    <iframe src="https://www.youtube.com/embed/rhhxQi9Ynpg?si=RoGtHiaNDICObm01" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <p class="mt-2 text-sm text-gray-600"><b>Dr. Yann-Suhan SÉNOVA  Neurochirurgien</b></p>
                             </p>
                         </div>
                         <div class="text-center">
                             <img src="aux/inf.jpg" alt="Infirmière" class="rounded-lg shadow-md w-[400px] h-[400px] object-cover mx-auto">
-                            <p class="mt-2 text-sm text-gray-600">Carole, infirmière de nuit qui a veillé sur moi pendant mon hospitalisation.</p>
+                            <p class="mt-2 text-sm text-gray-600"><b>Carole infirmière</b>.</p>
+                        </div>
+                        <div class="text-center">
+                            <img src="aux/gus.jpg" alt="Christophe, infirmier" class="rounded-lg shadow-md w-[400px] h-[400px] object-cover mx-auto">
+                           <p class="mt-2 text-sm text-gray-600"><b>Christophe et Bernadette infirmiers</b>.</p>
+                            <p class="mt-2 text-sm text-gray-600">
+                                <a href="aux/gus.mp4" target="_blank" class="hover:text-blue-600 cursor-pointer">
+                                    (cliquez pour voir la vidéo)
+                                </a>
+                            </p>
                         </div>
                     </div>
                     
@@ -621,28 +667,15 @@
                 <div class="mt-8">
                     <h3 class="text-xl font-semibold text-blue-900 mb-4">Autres intervenants</h3>
                     <ul class="list-disc pl-6 space-y-6">
-                        <li><a href="https://www.allodocteurs.fr/videos/" class="hover:text-blue-600"> Dr J.M. GURRUCHAGA - Neurologue à Henri Mondor.</a></li>
+                        <li><a href="https://www.allodocteurs.fr/videos/" class="hover:text-blue-600"><b> Dr J.M. GURRUCHAGA  Neurologue à Henri Mondor</b>.</a></li>
                     
-                        <li>Dr. Julie Schuler - Médécin généraliste Fondation Rothschild. <br> Telle un médécin de famille d'autrefois, elle estexceptionnelle, toujours présente pour moi de bout en bout dans le processus de guérison. Elle a toute ma gratitude.</li>
-                        <li>Julien Florian - Kinésithérapeute.</li>
-                        <li>Yohann Millotte - Kinésithérapeute Balnéothérapie.</li>
+                        <li><b>Dr. Julie Schuler  Médécin généraliste à la fondation Rothschild</b>.</li>
+                        <li><b>Julien Florian  Kinésithérapeute</b>.</li>
+                        <li><b>Yohann Millotte  Kinésithérapeute Balnéothérapie</b>.</li>
                     </ul>
                 </div>
 
-                <div class="mt-12">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="text-center">
-                            <img src="aux/gus.jpg" alt="Christophe, infirmier" class="rounded-lg shadow-md w-[400px] h-[400px] object-cover mx-auto">
-                           <p class="mt-2 text-sm text-gray-600">Christophe et Bernadette infirmiers qui m'ont accompagnée tout au long de l'aventure</p>
-                            <p class="mt-2 text-sm text-gray-600">
-                                <a href="aux/gus.mp4" target="_blank" class="hover:text-blue-600 cursor-pointer">
-                                    (cliquez pour voir la vidéo)
-                                </a>
-                            </p>
-                        </div>
-                        
-                    </div>
-                </div>
+                
             </div>
         </section>
 
@@ -657,8 +690,9 @@
                     </p>
                     <div class="flex justify-center">
                         <p> </p>
-
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NuxAXG6aQCM?si=2Ivm9F7CQRdUWJtR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="youtube-container">
+                            <iframe src="https://www.youtube.com/embed/NuxAXG6aQCM?si=2Ivm9F7CQRdUWJtR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -689,6 +723,29 @@
                     <textarea name="message" placeholder="Votre message" rows="6" required></textarea>
                     <button type="submit" class="btn">Envoyer</button>
                 </form>
+            </div>
+        </section>
+
+        <!-- Faire un don Section -->
+        <section id="faire-un-don" class="mb-12" data-aos="fade-up">
+            <h2 class="text-2xl sm:text-3xl font-semibold text-blue-900 mb-6">Faire un don</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <p class="mb-6">Votre soutien est précieux pour faire avancer la recherche sur la maladie de Parkinson et aider d'autres patients. Chaque don compte et contribue à améliorer la qualité de vie des personnes atteintes.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-4">Faire un don à la start-up</h3>
+                        <p class="mb-4">Soutenez notre démarche et la recherche</p>
+                        <a href="https://www.fondation-hopital.fr/faire-un-don" target="_blank" class="btn inline-block">Faire un don à la fondation</a>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-4">Faire un don à France Parkinson</h3>
+                        <p class="mb-4">Soutenez l'association France Parkinson</p>
+                        <a href="https://www.franceparkinson.fr/faire-un-don/" target="_blank" class="btn inline-block">Faire un don à France Parkinson</a>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <p class="text-sm text-gray-600">Vos dons sont déductibles des impôts à hauteur de 66% pour les particuliers et 60% pour les entreprises.</p>
+                </div>
             </div>
         </section>
 
